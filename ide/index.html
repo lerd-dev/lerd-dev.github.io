@@ -1,1 +1,227 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/ide/manifest.json"><link rel="shortcut icon" href="/ide/favicon.ico"><title>LERD ide</title><style>.block-id-11{background-color:#ccc}</style><style>.muted{color:#ccc}.bold{font-weight:700}.atom>span{position:relative}.dep-control .inspector>div{display:inline-block}</style><link href="/ide/static/css/main.ddbef798.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/ide/static/js/main.80c455a3.js"></script></body></html>
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3001/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3001/manifest.json">
+    <link rel="shortcut icon" href="http://localhost:3001/favicon.ico">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>LERD ide</title>
+
+    <style>
+      .block-id-11 { background-color: #cccccc}
+    </style>
+    <style>
+      .muted { color: #cccccc}
+      .bold { font-weight: bold }
+      .atom > span { position: relative }
+      .dep-control .inspector > div{
+        display: inline-block;
+      }
+    </style>
+  <style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+</style><style type="text/css">.App {
+
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+</style><style type="text/css">.Resizer {
+    background: #000;
+    opacity: .2;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-clip: padding-box;
+}
+
+.Resizer:hover {
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.Resizer.horizontal {
+    height: 11px;
+    margin: -5px 0;
+    border-top: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    cursor: row-resize;
+    width: 100%;
+}
+
+.Resizer.horizontal:hover {
+    border-top: 5px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.Resizer.vertical {
+    width: 11px;
+    margin: 0 -5px;
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-right: 5px solid rgba(255, 255, 255, 0);
+    cursor: col-resize;
+}
+
+.Resizer.vertical:hover {
+    border-left: 5px solid rgba(0, 0, 0, 0.5);
+    border-right: 5px solid rgba(0, 0, 0, 0.5);
+}
+.Resizer.disabled {
+    cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+    border-color: transparent;
+}
+</style><style type="text/css">.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.bottom-bar .range-control-range { background-color: #ccc; margin-right: 10px; padding-left: 2px; padding-right: 2px}
+.bottom-bar .range-marker { color: #fff}
+.pipe-wrapper { display: -ms-inline-flexbox; display: inline-flex; width: 100% }
+.pipe-wrapper .pipe-info { width: 100% }
+.pipe-row{ display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; margin-left: 10px;}
+.pipe-row.inline {
+    -ms-flex-pack: normal;
+        justify-content: normal;
+}
+
+.hints {
+    margin-top: calc(100vh - 250px);
+}
+</style><style type="text/css">.react-autosuggest__container {
+  position: relative;
+  display: inline;
+}
+
+.react-autosuggest__input {
+  width: 240px;
+  height: 30px;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  -webkit-appearance: none;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input::-ms-clear {
+  display: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: relative;
+  top: -1px;
+  width: 280px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}
+</style><style type="text/css">.layers li { list-style: none; }
+.layers li::before { content: "\2022"; position: relative; top: 0em; }
+.layers li.active { font-weight: bold }
+.layers li.override::before { color: red; content: "!";}
+</style></head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div class="App"><div><div class="SplitPane primary vertical " style="display: flex; flex: 1 1 0%; height: 100%; position: absolute; outline: none; overflow: hidden; user-select: text; flex-direction: row; left: 0px; right: 0px;"><div class="Pane vertical Pane1  " style="flex: 0 0 auto; position: relative; outline: none; width: 300px;"><div class="SplitPane  horizontal " style="display: flex; flex: 1 1 0%; height: 100%; position: absolute; outline: none; overflow: hidden; user-select: text; bottom: 0px; flex-direction: column; min-height: 100%; top: 0px; width: 100%;"><div class="Pane horizontal Pane1  " style="flex: 0 0 auto; position: relative; outline: none; height: 300px; display: flex;"><div><h3><a href="https://lerd.gdn/">LERD</a></h3><div><h4>Navigator</h4><ul><li><u>EmptyPipe</u></li></ul></div><button>Create Pipe</button></div></div><span class="Resizer horizontal "></span><div class="Pane horizontal Pane2  " style="flex: 1 1 0%; position: relative; outline: none;"><div><button>Create Layer</button><div><h4>Layers</h4><ul class="layers"><li class="active block-layer-null">Default layer</li></ul><style>.block-layer-null { color: black }</style></div></div></div></div></div><span class="Resizer vertical "></span><div class="Pane vertical Pane2  " style="flex: 1 1 0%; position: relative; outline: none;"><div><div><input value="EmptyPipe"></div><div><div>SIDELINKS:<div contenteditable="false" class="pipe-row dep-control"><div class="inspectors"><div class="inspector"><div style="font-family: Menlo, monospace; font-size: 11px; line-height: 14px; cursor: default;"><span style="padding-top: 2px;"><span style="color: rgb(110, 110, 110); font-size: 10px; margin-right: 3px; white-space: pre; user-select: none;"></span><span style="color: rgb(128, 128, 128);">undefined</span></span></div><u>link</u></div></div><span><span><u>edit</u>&nbsp;<u>delete</u></span>&nbsp;Terminator&nbsp; ▹ &nbsp;EmptyPipe</span></div></div><hr><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div aria-describedby="placeholder-dfose" class="notranslate public-DraftEditor-content" contenteditable="true" role="textbox" spellcheck="false" style="outline: none; user-select: text; white-space: pre-wrap; word-wrap: break-word;"><div data-contents="true"><div class="" data-block="true" data-editor="dfose" data-offset-key="eolea-0-0"><div data-offset-key="eolea-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="eolea-0-0"><br data-text="true"></span></div></div></div></div></div></div><hr><div><u style="float: right;">Inspector</u><div style="font-family: Menlo, monospace; font-size: 11px; line-height: 14px; cursor: default;"><span style="padding-top: 2px;"><span style="color: rgb(110, 110, 110); font-size: 10px; margin-right: 3px; white-space: pre; user-select: none;"></span><span style="color: rgb(128, 128, 128);">undefined</span></span></div></div></div><div class="hints"><h5>Keyboard shortcuts:</h5><ul><li>Cmd + s : Commit changes</li><li>Ctrl + i : Insert pipe</li><li>Ctrl + / : Change pipe</li><li>Ctrl + c : Create pipe in pipe selector</li></ul></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script type="text/javascript" src="./index_files/bundle.js"></script>
+
+</body></html>
