@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "abbfc6c52ac33057ea3c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9bd3c59cbfdd8e85c9b4"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -2012,7 +2012,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".Resizer {\n    background: #000;\n    opacity: .2;\n    z-index: 1;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n    background-clip: padding-box;\n}\n\n.Resizer:hover {\n    -webkit-transition: all 2s ease;\n    -o-transition: all 2s ease;\n    transition: all 2s ease;\n}\n\n.Resizer.horizontal {\n    height: 11px;\n    margin: -5px 0;\n    border-top: 5px solid rgba(255, 255, 255, 0);\n    border-bottom: 5px solid rgba(255, 255, 255, 0);\n    cursor: row-resize;\n    width: 100%;\n}\n\n.Resizer.horizontal:hover {\n    border-top: 5px solid rgba(0, 0, 0, 0.5);\n    border-bottom: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.vertical {\n    width: 11px;\n    margin: 0 -5px;\n    border-left: 5px solid rgba(255, 255, 255, 0);\n    border-right: 5px solid rgba(255, 255, 255, 0);\n    cursor: col-resize;\n}\n\n.Resizer.vertical:hover {\n    border-left: 5px solid rgba(0, 0, 0, 0.5);\n    border-right: 5px solid rgba(0, 0, 0, 0.5);\n}\n.Resizer.disabled {\n    cursor: not-allowed;\n}\n.Resizer.disabled:hover {\n    border-color: transparent;\n}\n", ""]);
+exports.push([module.i, ".Resizer {\n    background: #000;\n    opacity: .2;\n    z-index: 1;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n    background-clip: padding-box;\n}\n\n.Resizer:hover {\n    -webkit-transition: all 2s ease;\n    -o-transition: all 2s ease;\n    transition: all 2s ease;\n}\n\n.Resizer.horizontal {\n    height: 11px;\n    margin: -5px 0;\n    border-top: 5px solid rgba(255, 255, 255, 0);\n    border-bottom: 5px solid rgba(255, 255, 255, 0);\n    cursor: row-resize;\n    width: 100%;\n}\n\n.Resizer.horizontal:hover {\n    border-top: 5px solid rgba(0, 0, 0, 0.5);\n    border-bottom: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.vertical {\n    width: 11px;\n    margin: 0 -5px;\n    border-left: 5px solid rgba(255, 255, 255, 0);\n    border-right: 5px solid rgba(255, 255, 255, 0);\n    cursor: col-resize;\n}\n\n.Resizer.vertical:hover {\n    border-left: 5px solid rgba(0, 0, 0, 0.5);\n    border-right: 5px solid rgba(0, 0, 0, 0.5);\n}\n.Resizer.disabled {\n    cursor: not-allowed;\n}\n.Resizer.disabled:hover {\n    border-color: transparent;\n}\n\n.Pane {\n    overflow-y: auto;\n}\n", ""]);
 
 // exports
 
@@ -66238,7 +66238,17 @@ var DepControl = function (_React$Component) {
           "\xA0",
           !this.state.activeInput && (this.props.resolvedPipe || {}).desc,
           "\xA0 \u25B9 \xA0",
-          this.props.requestedPipe.desc
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "strong",
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 99
+              },
+              __self: this
+            },
+            this.props.requestedPipe.desc
+          )
         )
       );
     }
