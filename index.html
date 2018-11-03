@@ -40,7 +40,7 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation"><a href="#home">Home</a></li>
-            <li role="presentation"><a href="#goals">Goals</a></li>
+            <li role="presentation"><a href="#features">Features</a></li>
             <li role="presentation"><a href="#demo">Demo</a></li>
             <li role="presentation"><a href="#contact">Contact</a></li>
           </ul>
@@ -50,41 +50,58 @@
 
       <div id="home" class="jumbotron">
         <h1 class="text-left"><span class="text-danger">L</span>ow<br/><span class="text-danger">E</span>ntropy<br/><span class="text-danger">R</span>eactive<br/><span class="text-danger">D</span>esign</h1>
-        <p class="lead">Experimental concept designed to revolutionize software development</p>
+        <p class="lead text-left">
+          LERD is a holistic software development environment. Instead of describing algorithm via language LERD offers a powerful CAD WYSWYG design tool. Stop wasting your power to loading and running cryptic sources in your brain. Edit your program and instantly see how it works.
+        </p>
       </div>
 
-      <div class="row marketing">
-        <h2 id="goals">Goals</h2>
-        <div class="col-lg-6">
-          <h4>Maintenance</h4>
-          <p>Improove management and maintenance of complex systems</p>
+      <h2 id="features">Key Features</h2>
+      <div class="features">
+        <div class="features--text">
+          <h2>Reactive &amp; Interactive programming</h2>
+          LERD designed with Reactive programing paradigm which means graph. Main editor window shows graph as pipe and edit it as a generic text editor. Text and functions calls are shown in the same window with live execution arguments and results.
 
-          <h4>Accessibility</h4>
-          <p>Software development to everyone</p>
-
-          <h4>Productivity</h4>
-          <p>Increase software development productivity</p>
+        </div>
+        <div class="features--pic">
+          <img src="/img/hello_world.gif"/>
         </div>
 
-        <div class="col-lg-6">
-          <h4>Machine Learning</h4>
-          <p>Leverage software development from machine learning in one hybrid tool</p>
+      </div>
 
-          <h4>Free Up</h4>
-          <p>Free up developers for real tasks</p>
+      <div class="features">
+        <div class="features--text">
+          <h2>Layers</h2>
+          Conditions are implemented as layers. Each layer is linked to a pipe which determinate if the layer changes is applied. Also layer can be shown/hided via editor
 
-          <h4>Simplify</h4>
-          <p>Simplify software development</p>
+        </div>
+        <div class="features--pic">
+          <img src="/img/lerd_layer.gif"/>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="features--text">
+          <h2>Dependency request</h2>
+          Pipe holds information how pipes linked to each other. If pipe need an input it asks itself, if nothing found it asks parent pipe, if parent pipe has nothing it ask another parent and so on.
+
+        </div>
+        <div class="features--pic">
+          <img src="/img/lerd_http.gif"/>
         </div>
       </div>
 
       <div class="row marketing">
         <h2 id="demo">Demo</h2>
-        <div class="col-sm-12">
-          <a href="/ide">Live IDE</a>
+        <div>
+          <a href="/ide" class="btn btn-primary">Live IDE</a>
+          <br/><br/>
         </div>
         <div class="col-sm-12">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/XU4UWCnnjqQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div>
+          <a href="/ide" class="btn btn-primary">Live IDE</a>
+          <br/><br/>
         </div>
       </div>
 

@@ -34,7 +34,7 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1040px;
   }
 }
 .container-narrow > hr {
@@ -49,6 +49,10 @@ body {
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
+}
+
+.jumbotron p {
+  font-weight: 400;
 }
 
 /* Supporting marketing content */
@@ -75,5 +79,23 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+.features {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+@media screen and (min-width: 1020px) {
+  .features {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .features--text {
+    max-width: 415px;
   }
 }
