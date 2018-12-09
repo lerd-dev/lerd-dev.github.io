@@ -89,6 +89,10 @@ body {
   padding-top: 72px;
   padding-bottom: 72px;
 }
+.features img {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 1020px) {
   .features {
     flex-direction: row-reverse;
