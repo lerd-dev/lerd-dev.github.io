@@ -40,7 +40,7 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation"><a href="#home">Home</a></li>
-            <li role="presentation"><a href="#features">Features</a></li>
+            <li role="presentation"><a href="#concepts">Concepts</a></li>
             <li role="presentation"><a href="#demo">Demo</a></li>
             <li role="presentation"><a href="#status">Status</a></li>
             <li role="presentation"><a href="#feedback">Contribute</a></li>
@@ -53,27 +53,26 @@
       <div id="home" class="jumbotron">
         <h1 class="text-left"><span class="text-danger">L</span>ow<br/><span class="text-danger">E</span>ntropy<br/><span class="text-danger">R</span>eactive<br/><span class="text-danger">D</span>esign</h1>
         <p class="lead text-left">
-          LERD is a holistic software development environment. Instead of describing algorithm via language LERD offers a powerful CAD WYSWYG design tool. Stop wasting your efforts to loading and running cryptic sources in your brain. Edit your program and instantly see how it works.
+          LERD is an experimental no-code solution the same powerful and flexible as a generic programming language.
         </p>
       </div>
 
-      <h2 id="features">Key Features</h2>
-      <div class="features">
-        <div class="features--text">
-          <h2>Functional Reactive Programming</h2>
-          LERD takes best from Reactive and Functional programming paradigms
+      <div id="concepts" class="features">
+          Existing no-code solutions focused on a user interface, to quickly build something working from a predefined set of buttons, inputs and other components. Each component has a predefined set of customisation options. It cannot customise more than it can be customized.
+        <br/>
+          In LERD instead of top-to-bottom design, where top-level components are implemented first. LERD goes bottom-to-top way. LERD provided the low-level computation blocks, which can be assembled into higher building blocks.
+          Such an approach removes customisation limits and makes LERD a universal software development tool.
 
-        </div>
-        <div class="features--pic">
-          <img src="/img/paradigms.png"/>
-        </div>
+
 
       </div>
 
       <div class="features">
         <div class="features--text">
-          <h2>Reactive &amp; Interactive programming</h2>
-          LERD designed with Reactive programing paradigm which means graph. Main editor window shows graph as a pipe and edits it as a generic text editor. Text and functions calls are shown in the same window with live execution arguments and results.
+          <h2>An algorithm is a data transformation</h2>
+          This page is HTML transformed into pixels on a screen. A robotic vacuum cleaner transforms data from sensors and state in memory into a signal to electric motor. Bitcoin wallet balance is a sum (transformation) of incoming and outgoing transaction. Any algorithm can be represented as a data transformation.
+          <br/>
+          LERD building block is a data transformation unit.
 
         </div>
         <div class="features--pic">
@@ -84,8 +83,15 @@
 
       <div class="features">
         <div class="features--text">
-          <h2>Layers</h2>
-          Conditions are implemented as layers. Each layer is linked to a pipe which defines if the layer changes are applied. Also layer can be shown/hidden via editor.
+          <h2>Algorithm multiview</h2>
+          No-code solutions have a great advantage over code, there is no code and that means no text.
+          A text has high entropy (a lot of noise). Computers struggle to interpret/compile noisy text into something more structured and hardly can help with code representation.
+          <br/>
+          LERD does not use text to store algorithm, which let to have different views on the same algorithm.
+          2+2 can be coded in different ways, with object, functions, with variables, without variables.
+          <br/>
+          LERD could have multiple views for the same algorithm.
+
 
         </div>
         <div class="features--pic">
@@ -95,12 +101,14 @@
 
       <div class="features">
         <div class="features--text">
-          <h2>Dependency request</h2>
-          Pipe holds information how pipes are linked to each other. If pipe needs an input it asks itself, if nothing found it asks parent pipe, if parent pipe has nothing it asks another parent and so on.
+          <h2>Interactive programming</h2>
+          It's better to see how the algorithm works than imagine it. Coders have to use abstract thinking to imagine how the code works. It is like builders instead of seeing blueprints would read building description in text and imagine the building.
+          <br/>
+          LERD interactive programming means all algorithm data flow instantly visible all the time while running or editing.
 
         </div>
         <div class="features--pic">
-          <img src="/img/lerd_http.gif"/>
+          <img src="/img/hello_world.gif"/>
         </div>
       </div>
 
