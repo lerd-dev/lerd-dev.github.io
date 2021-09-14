@@ -1,0 +1,15 @@
+<script>
+  function onSubmit(e) {
+    debugger
+    e.preventDefault()
+  }
+</script>
+<form onsubmit="onSubmit()">
+<input name="todo"/>
+<button type="submit" name="add">Add</button>
+  <ul>
+    <li>todo1 <button type="submit" name="remove" value="1">remove</button></li>
+    <li>todo2 <button type="submit" name="remove" value="1">remove</button></li>
+  </ul>
+</form>
+
